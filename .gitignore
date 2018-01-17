@@ -1,0 +1,12 @@
+*.jar
+*.class
+.idea/libraries/
+HopMall-dao/target/
+*/rebel.xml
+rebel.xml
+HopMall-web/target/
+*.iml
+.idea/workspace.xml
+*.mp3
+*.mp4
+out/

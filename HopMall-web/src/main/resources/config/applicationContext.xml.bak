@@ -42,12 +42,10 @@
         <property name="basePackage" value="com.sll.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-  <!--  
-  <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
-    </bean> -->
-
-    <!-- <tx:advice id="txAdvice" transaction-manager="transactionManager">
+    </bean>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             &lt;!&ndash; 写操作 &ndash;&gt;
             <tx:method name="insert*" propagation="REQUIRED" isolation="DEFAULT"/>
@@ -66,6 +64,4 @@
         &lt;!&ndash;把事务控制在Service层&ndash;&gt;
         <aop:advisor advice-ref="txAdvice" pointcut-ref="pc"/>
     </aop:config>-->
-	<!-- 注解的方式添加事物 -->
-	<!-- <tx:annotation-driven transaction-manager="txManager" /> -->
 </beans>
